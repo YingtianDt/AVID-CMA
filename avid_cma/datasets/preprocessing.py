@@ -9,7 +9,7 @@ import torch
 import numpy as np
 import random
 import librosa
-from utils.videotransforms import video_transforms, volume_transforms, tensor_transforms
+from ..utils.videotransforms import video_transforms, volume_transforms, tensor_transforms
 
 
 class VideoPrep_MSC_CJ(object):

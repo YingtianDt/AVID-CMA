@@ -9,7 +9,7 @@ import random
 import torch
 import numpy as np
 import torch.utils.data as data
-from utils.ioutils import av_wrappers
+from ..utils.ioutils import av_wrappers
 from collections import defaultdict
 
 

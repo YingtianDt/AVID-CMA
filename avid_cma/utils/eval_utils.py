@@ -9,8 +9,8 @@ import torch
 from torch import nn
 import torch.distributed as dist
 
-import utils.logger
-from utils import main_utils
+from . import logger
+from . import main_utils
 import yaml
 import os
 
@@ -29,7 +29,7 @@ def prepare_environment(args, cfg, fold):
     os.makedirs(eval_dir, exist_ok=True)
     yaml.safe_dump(cfg, open('{}/config.yaml'.format(eval_dir), 'w'))
 
-    logger = utils.logger.Logger(quiet=args.quiet, log_fn='{}/eval.log'.format(eval_dir), rank=args.gpu)
+    logger = logger.Logger(quiet=args.quiet, log_fn='{}/eval.log'.format(eval_dir), rank=args.gpu)
     if any(['SLURM' in env for env in list(os.environ.keys())]):
         logger.add_line("=" * 30 + "   SLURM   " + "=" * 30)
         for env in os.environ.keys():

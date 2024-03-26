@@ -6,7 +6,7 @@
 #
 
 import os
-from datasets.video_db import VideoDataset
+from .video_db import VideoDataset
 
 DATA_PATH = '/data/datasets/hmdb/videos'
 ANNO_PATH = '/data/datasets/hmdb/splits/'

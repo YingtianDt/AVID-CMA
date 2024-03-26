@@ -6,7 +6,7 @@
 #
 
 import torch.nn as nn
-from models.network_blocks import BasicR2P1DBlock
+from .network_blocks import BasicR2P1DBlock
 
 
 class R2Plus1D(nn.Module):

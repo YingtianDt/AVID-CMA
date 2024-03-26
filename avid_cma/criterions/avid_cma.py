@@ -14,9 +14,9 @@ from torch.nn import functional as F
 import torch.distributed as dist
 import numpy as np
 import pprint
-from utils.alias_method import AliasMethod
-from criterions.nce import NCECriterion
-from criterions.avid import AVIDSimilarityMemoryBank
+from ..utils.alias_method import AliasMethod
+from .nce import NCECriterion
+from .avid import AVIDSimilarityMemoryBank
 
 __all__ = ['AVID_CMA']
 

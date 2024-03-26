@@ -5,7 +5,7 @@
 # LICENSE file in the root directory of this source tree.
 #
 
-from datasets.video_db import VideoDataset
+from .video_db import VideoDataset
 
 DATA_PATH = '/data/datasets/UCF101/data'
 ANNO_PATH = '/data/datasets/UCF101/ucfTrainTestlist/'

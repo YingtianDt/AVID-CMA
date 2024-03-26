@@ -7,7 +7,7 @@
 
 import random
 import torch
-from utils.videotransforms.utils import functional as F
+from .utils import functional as F
 
 
 class Normalize(object):

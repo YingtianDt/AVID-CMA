@@ -8,7 +8,7 @@
 import torch
 from torch import nn
 import torch.distributed as dist
-from utils.distributed_utils import _gather_from_all
+from ..utils.distributed_utils import _gather_from_all
 
 
 class NCECriterion(nn.Module):

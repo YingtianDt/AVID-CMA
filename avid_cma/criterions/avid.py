@@ -10,9 +10,9 @@ from torch import nn
 from torch.nn import functional as F
 import torch.distributed as dist
 import pprint
-from utils.distributed_utils import _gather_from_all
-from utils.alias_method import AliasMethod
-from criterions.nce import NCECriterion
+from ..utils.distributed_utils import _gather_from_all
+from ..utils.alias_method import AliasMethod
+from .nce import NCECriterion
 
 __all__ = ['AVID']
 

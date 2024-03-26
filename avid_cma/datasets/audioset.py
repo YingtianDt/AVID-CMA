@@ -8,7 +8,7 @@
 import csv
 import numpy as np
 import glob
-from datasets.video_db import VideoDataset
+from .video_db import VideoDataset
 
 DATA_PATH = '/data/datasets/AS240/data/'
 CACHE_PATH = 'datasets/cache/audioset'

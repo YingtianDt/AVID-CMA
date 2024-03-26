@@ -13,7 +13,7 @@ import torchvision
 import warnings
 import math
 
-from utils.videotransforms import functional as F
+from . import functional as F
 from torchvision.transforms import functional as vF
 
 class Compose(object):
