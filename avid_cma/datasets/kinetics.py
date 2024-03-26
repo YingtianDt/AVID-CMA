@@ -13,7 +13,7 @@ import numpy as np
 DATA_PATH = '/data/datasets/kinetics/'
 
 
-from datasets.video_db import VideoDataset
+from .video_db import VideoDataset
 class Kinetics(VideoDataset):
     def __init__(self, subset,
                  return_video=True,
