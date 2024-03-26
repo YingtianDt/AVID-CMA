@@ -72,7 +72,7 @@ def prep_environment(args, cfg):
 
 
 def build_model(cfg, logger=None):
-    import models
+    from .. import models
     assert cfg['arch'] in models.__dict__, 'Unknown model architecture'
     model = models.__dict__[cfg['arch']](**cfg['args'])
 
