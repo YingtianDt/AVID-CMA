@@ -12,7 +12,7 @@ import numpy as np
 import torch.distributed as dist
 import datetime
 
-from utils.logger import Logger
+from .logger import Logger
 
 
 def initialize_distributed_backend(args, ngpus_per_node):
