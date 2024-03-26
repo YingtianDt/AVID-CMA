@@ -62,7 +62,7 @@ class AV_Wrapper(nn.Module):
 
 
 def av_wrapper(video_backbone, video_backbone_args, audio_backbone, audio_backbone_args, proj_dim=128, checkpoint=None):
-    import models
+    from .. import models
     assert video_backbone in models.__dict__, 'Unknown model architecture'
     assert audio_backbone in models.__dict__, 'Unknown model architecture'
     video_model = models.__dict__[video_backbone](**video_backbone_args)
